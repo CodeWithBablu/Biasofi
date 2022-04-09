@@ -34,10 +34,10 @@ class _HomePageState extends State<HomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.blueGrey[800],
+      backgroundColor: Color(0xFF37474F),
       appBar: AppBar(
         shadowColor: Colors.green,
-        backgroundColor: Colors.red,
+        backgroundColor: const Color(0xFFFF7043),
         centerTitle: true,
         title: const Text(
           'Bias or What',
@@ -62,7 +62,7 @@ class _HomePageState extends State<HomePage> {
                 child: Text(
                   'Political News Bias Detector',
                   style: TextStyle(
-                    color: Colors.deepOrange,
+                    color: Color(0xFFD6D6D6),
                     fontSize: 23,
                     fontWeight: FontWeight.w700,
                   ),
@@ -84,10 +84,14 @@ class _HomePageState extends State<HomePage> {
                     icon: Icon(
                       Icons.public,
                       color: Colors.cyanAccent,
-                      size: 35,
+                      size: 40,
                     ),
                     labelText: 'url',
-                    labelStyle: TextStyle(color: Colors.white),
+                    labelStyle: TextStyle(
+                      color: Colors.white,
+                      fontSize: 20,
+                      fontWeight: FontWeight.w800,
+                    ),
                   ),
                 ),
               ),
@@ -96,7 +100,7 @@ class _HomePageState extends State<HomePage> {
               height: 50,
             ),
             SizedBox(
-              width: 100,
+              width: 120,
               height: 50,
               child: Center(
                 child: ElevatedButton.icon(
@@ -128,7 +132,7 @@ class _HomePageState extends State<HomePage> {
                     shape: RoundedRectangleBorder(
                       borderRadius: BorderRadius.circular(12), // <-- Radius
                     ),
-                    fixedSize: const Size(150, 60),
+                    fixedSize: const Size(180, 60),
                     primary: Colors.lightGreenAccent,
                   ),
                 ),
